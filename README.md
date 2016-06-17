@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://imgur.com/FZMtIWb' title='Flixster Vertical' width='' alt='Flixster Vertical' />
+<img src='http://i.imgur.com/ZHcjdQK.gif' title='Flixster Vertical' width='' alt='Flixster Vertical' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
