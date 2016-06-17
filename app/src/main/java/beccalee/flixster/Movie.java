@@ -23,6 +23,10 @@ public class Movie {
         return rating;
     }
 
+    public String getReleaseDate() {
+        return "Release Date: " + releaseDate;
+    }
+
     public String getOverview() {
         return overview;
     }
@@ -36,6 +40,8 @@ public class Movie {
     public int rating;
     public String overview;
     public String backdropUrl;
+    public String releaseDate;
+    public String popularity;
 
     public Movie(JSONObject jsonObject) throws JSONException {
         this.title = jsonObject.getString("original_title");
@@ -43,6 +49,8 @@ public class Movie {
         this.rating = jsonObject.getInt("vote_average");
         this.overview = jsonObject.getString("overview");
         this.backdropUrl = jsonObject.getString("backdrop_path");
+        this.releaseDate = jsonObject.getString("release_date");
+        this.popularity = jsonObject.getString("popularity");
     }
 
 
