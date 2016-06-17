@@ -19,6 +19,8 @@ public class Details extends AppCompatActivity{
     TextView tvTitle;
     TextView tvRelease;
     TextView tvOverview;
+    TextView tvPopularity;
+    float rating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,22 +31,26 @@ public class Details extends AppCompatActivity{
         tvRelease = (TextView) findViewById(R.id.tvRelease);
         tvOverview = (TextView) findViewById(R.id.tvOverview);
         ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+        tvPopularity = (TextView) findViewById(R.id.tvPopularity);
+
 
         String title = getIntent().getStringExtra("title");
         String release = getIntent().getStringExtra("release");
         String overview = getIntent().getStringExtra("overview");
         String backdropUrl = getIntent().getStringExtra("backdrop");
-        float rating = getIntent().getFloatExtra("rating", 0);
+        String popularity = getIntent().getStringExtra("popularity");
+        rating = getIntent().getFloatExtra("rating", 0);
         Log.d("uri", backdropUrl);
         //int rating = getIntent().getIntExtra("rating");
         tvTitle.setText(title);
         tvRelease.setText(release);
         tvOverview.setText(overview);
-        ratingBar.setRating((float)rating/2);
+        tvPopularity.setText(popularity);
+        ratingBar.setRating(rating/2);
         //ivBackdrop.setImageURI(ivBackdrop);
 
 
-        Picasso.with(this.getApplicationContext()).load(backdropUrl).placeholder(R.drawable.loadingsymbol).into(ivBackdrop);
+        Picasso.with(this.getApplicationContext()).load(backdropUrl).placeholder(R.drawable.loading).into(ivBackdrop);
 
     }
 

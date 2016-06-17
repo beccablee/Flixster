@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_floating_material_dark">
 
     <ImageView
         android:layout_width="360dp"
@@ -27,7 +28,8 @@
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
-        android:paddingBottom="5dp" />
+        android:paddingBottom="5dp"
+        android:textColor="@color/abc_primary_text_material_dark" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,5 +42,6 @@
         android:paddingBottom="10dp"
         android:layout_below="@+id/tvTitle"
         android:layout_toRightOf="@+id/ivPoster"
-        android:layout_toEndOf="@+id/ivPoster" />
+        android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="@color/abc_secondary_text_material_dark" />
 </RelativeLayout>

@@ -19,7 +19,7 @@ public class Movie {
         return String.format("https://image.tmdb.org/t/p/w342/%s", posterUrl);
     }
 
-    public int getRating() {
+    public float getRating() {
         return rating;
     }
 
@@ -35,9 +35,13 @@ public class Movie {
         return String.format("https://image.tmdb.org/t/p/w780/%s", backdropUrl);
     }
 
+    public String getPopularity() {
+        return "Popularity: " + popularity;
+    }
+
     public String title;
     public String posterUrl;
-    public int rating;
+    public float rating;
     public String overview;
     public String backdropUrl;
     public String releaseDate;
