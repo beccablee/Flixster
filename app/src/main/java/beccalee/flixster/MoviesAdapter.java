@@ -70,6 +70,7 @@ public class MoviesAdapter extends ArrayAdapter<Movie> {
         viewHolder.overview.setText(movie.overview);
         viewHolder.poster.setImageResource(0);
 
+
         Picasso.with(getContext()).load(imageUri).transform(new RoundedCornersTransformation(10, 10))
                 .placeholder(R.drawable.loading).into(viewHolder.poster);
 
