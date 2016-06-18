@@ -40,10 +40,17 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+I had trouble trying to implement the ButterKnife library so I didn't have enough time to make use of it.
+
 ## Open-source libraries used
 
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
 - [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
+
+## Sources
+
+- [Loading Image] http://www.everypony.com/threads/help-me-find-my-oc-mes-cutiemark.17415/
+- [Movie Database] https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed
 
 ## License
 
